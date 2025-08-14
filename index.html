@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/norm.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <title>interfase_panel_position</title>
+</head>
+    <!-- 
+        Сделать так, как показано на макете и в видео.
+
+        Весь текст на web-странице сделан 16px, семейство шрифта "Roboto"
+        Заголовки -  семейство шрифта "Montserrat", размеры нативные.
+        Размер контейнера для контента равен 1320px
+
+        Специально оставляю файл с версткой, где уже практически все есть. К тому же уже выставлены размеры изображений в инлайновых стилях.
+        Т.е. все узлы текстовые, заголовки, изображения есть уже,- есть база структуры с контентом, но это не все что вам нужно. 
+        Поэтому задача доработать верстку и написать полностью CSS, чтобы выполнить задачу и все работало как на видео и согласно макету. 
+
+        Разрешается дорабатывать все и даже переписать верстку заново, если хотите, также можете задавать свои классы/id где счтитаете нужным и необходимым.
+        Для выполнения этой работы не требуется знания ни Flex, ни CSS Grid, ни Bootstrap фреймворка или другого CSS/JS фреймворка, только то, что мы выучили, прошли.
+        Но если кто хочет, можете применять и использовать вышеперечисленное.
+        PS: 
+        В помощь.
+        1) Вполне очевидно, что тут ключевую роль играет позиционирование элементов
+        2) Для более правильных и точных позиционирований элементов вам скорее всего понадобится calc в расчетах:
+            Примеры:
+                margin-bottom: calc(100px + 15px);
+                margin-top: calc(122px / 2);
+                margin: calc(100px + 15px) 0 0 0;
+                margin-left: calc(50% - 50px);
+                margin-left: calc(50% - 50px / 2);  и т.д....
+        3) Шрифты вы можете подключить через Google Fonts
+        -------------------------------------------------------------------------------
+        *"Chapter" это не параграф как таковой, а имеется ввиду глава, раздел.
+
+    -->
+<body>
+    <a href="#">
+        <img src="src/img/operator.png" alt="">
+    </a>
+    <main>
+        <nav class="nav_panel">
+            <div>
+                <a href="#">
+                    <img src="src/img/html5___css-logo.png" alt="html5-logo" style="width:200px;">
+                </a>
+            </div>
+        </nav>
+        <div class="container">
+            <h1>About birds, houses, cars</h1>
+    
+            <section>
+    
+                <h3 id="bird">Chapter 1. About bird </h3>
+                <img  class="chapter_1" src="http://place-hold.it/450x250/4d79ff/FFFFFF?text= Chapter 1. About bird&fontsize=18" alt="Chapter 1. About bird">
+                <p>Aliquam ceptos himenaeotent taciti sociosqu ad tora torquent per conubia nostra, per inceptos himenaeos. Donec suscipAliquam ac justo ut arcu commodo commodo nec in nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec suscipAliquam ac justo ut arcu commodo commodo nec in nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+                <p>Donec suscipAliquam ac justo ut arcu commodo commodo nec in nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec suscipAliquam ac justo ut arcu commodo commodo nec in nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec suscip commodo nec in nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec suscipit diam nulla, at varius massa.</p>
+                <p>Aliquam ceptos himenaeotent taciti sociosqu ad tora torquent per conubia nostra, per inceptos himenaeos. Donec suscipAliquam ac justo ut arcu commodo commodo nec in nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec suscipAliquam ac justo ut arcu commodo commodo nec in nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+                <p>Donec suscipAliquam ac justo ut arcu commodo commodo nec in nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec suscipAliquam ac justo ut arcu commodo commodo nec in nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec suscip commodo nec in nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec suscipit diam nulla, at varius massa.</p>
+    
+                <a  href="#bird">
+                    <img class="img_1" src="src/img/bird.png" alt="bird.png" style="width:140px; height:auto;">
+                </a>
+    
+                <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec suscipit diam nulla, at varius massa. Donec a convallis nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla vestibulum velit cursus nunc adipiscing in tristique nisi feugiat. Maecenas id sem nec lacus placerat porta. Curabitur nec orci ac lorem fermentum adipiscingAliquam ac justo ut arcu commodo commodo nec in nisl. </p>
+                <p>Aliquam ceptos himenaeotent taciti sociosqu ad tora torquent per conubia nostra, per inceptos himenaeos. Donec suscipAliquam ac justo ut arcu commodo commodo nec in nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec suscipAliquam ac justo ut arcu commodo commodo nec in nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+                <p>Donec suscipAliquam ac justo ut arcu commodo commodo nec in nisl, per inceptos himenaeos. Donec suscipAliquam ac justo ut arcu commodo commodo nec in nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec suscip commodo nec in nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec suscipit diam nulla, at varius massa.</p>
+                <p>Donec suscipAliquam ac justo ut arcu commodo commodo nec in nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec suscip commodo nec in nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec suscipit diam nulla, at varius massa.</p>
+
+                <h3 id="house">Chapter 2. About house</h3>
+                <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec suscipit diam nulla, at varius massa. Donec a convallis nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla vestibulum velit cursus nunc adipiscing in tristique nisi feugiat. Maecenas id sem nec lacus placerat porta. Curabitur nec orci ac lorem fermentum adipiscingAliquam ac justo ut arcu commodo commodo nec in nisl. </p>
+                <img  class="chapter_2" src="http://place-hold.it/450x250/ffcc66/FFFFFF?text= Chapter 2. About house&fontsize=18" alt="Chapter 2. About house">
+                <p>Aliquam ceptos himenaeotent taciti sociosqu austo ut arcu commodo commodo nostra, oda nostra, per inceptos himenaeos. </p>
+                <p>Donec suscipAliquam ac justo ut arcu commodo commodo nec in nisl, per inceptos himenaeos. Donec suscipAliquam ac justo ut arcu commodo commodo nec in nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec suscip commodo nec in nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec suscipit diam nulla, at varius massa.</p>
+                <p>Aliquam ceptos himenaeotceptos himenaeos. Donec suscipAliquam ac justo ut arcu commodo commodo nec in nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+                <p>Aliquam ceptos himenaeotent taciti sociosqu ad tora torquent per conubia nostra, per inceptos himenaeos. Donec suscipAliquam ac justo ut arcu commodo commodo nec in nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec suscipAliquam ac justo ut arcu commodo commodo nec in nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+                <p>Class am nulla, at varius masssuere cubilia Curae; Nulla vestibulum velit cursus nunc adipiscing in tristique nisi feugiat. Maecenas id sem nec lacus placerat porta. Curabitur nec orci ac lorem fermentum adipiscingAliquam ac justo ut arcu commodo commodo nec in nisl. </p>
+    
+                <a href="#house">
+                    <img class="img_2" src="src/img/house.png" alt="house.png" style="width:170px; height:auto;">
+                </a>
+    
+                <p>Aliquam ceptos himenaeotent taciti sociosqu ad tora torquent per conubia nostra, per inceptos himenaeos. Donec suscipAliquam ac justo ut arcu commodo commodo nec in nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec suscipAliquam ac justo ut arcu commodo commodo nec in nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+                <p>Donec suscipAliquam ac justo ut arcu commodo commodo nec in nisl, per inceptos himenaeos. Donec suscipAliquam ac justo ut arcu commodo commodo nec in nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec suscip commodo nec in nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec suscipit diam nulla, at varius massa.</p>
+                <p>Aliquam ceptos himenaeotent taciti sociosqu ad tora torquent per conubia nostra, per inceptos himenaeos. Donec suscipAliquam ac justo ut arcu commodo commodo nec in nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec suscipAliquam ac justo ut arcu commodo commodo nec in nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+                <p>Donec suscipAliquam ac justo ut arcu commodo commodo nec in nisl, per inceptos himenaeos. Donec suscipAliquam ac justo ut arcu commodo commodo nec in nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec suscip commodo nec in nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec suscipit diam nulla, at varius massa.</p>
+            
+    
+                <h3 id="car">Chapter 3. About car</h3>
+                <img class="chapter_3" src="http://place-hold.it/450x250/ff0000/FFFFFF?text= Chapter 3. About car&fontsize=18" alt="Chapter 3. About car">
+                <p>Aliquam ceptos himenaeotent taciti sociosqu ad tora torquent per conubia nostra, per inceptos himenaeos. Donec suscipAliquam ac justo ut arcu commodo commodo nec in nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec suscipAliquam ac justo ut arcu commodo commodo nec in nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+                <p>Donec suscipAliquam ac justo ut arcu commodo commodo nec in nisl, per inceptos himenaeos. Donec suscipAliquam ac justo ut arcu commodo commodo nec in nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec suscip commodo nec in nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec suscipit diam nulla, at varius massa.</p>
+                <p>Aliquam ceptos himenaeotent taciti sociosqu ad tora torquent per conubia nostra, per inceptos himenaeos. Donec suscipAliquam ac justo ut arcu commodo commodo nec in nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec suscipAliquam ac justo ut arcu commodo commodo nec in nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+    
+                <a href="#car">
+                    <img  class="img_3" src="src/img/car-lite.svg" alt="car-lite.svg" style="width:170px; height:auto;">
+                </a>
+    
+                <p>Aliquam ceptos himenaeotent taciti sociosqu ad tora torquent per conubia nostra, per inceptos himenaeos. Donec suscipAliquam ac justo ut arcu commodo commodo nec in nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec suscipAliquam ac justo ut arcu commodo commodo nec in nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+                <p>Aliquam ceptos himenaeotent taciti sociosqu ad tora torquent per conubia nostra, per inceptos himenaeos. Donec suscipAliquam ac justo ut arcu commodo commodo nec in nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec suscipAliquam ac justo ut arcu commodo commodo nec in nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+                <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec suscipit diam nulla, at varius massa. Donec a convallis nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla vestibulum velit cursus nunc adipiscing in tristique nisi feugiat. Maecenas id sem nec lacus placerat porta. Curabitur nec orci ac lorem fermentum adipiscingAliquam ac justo ut arcu commodo commodo nec in nisl. </p>
+                <p>Aliquam ceptos himenaeotent taciti sociosqu ad tora torquent per conubia nostra, per inceptos himenaeos. Donec suscipAliquam ac justo ut arcu commodo commodo nec in nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec suscipAliquam ac justo ut arcu commodo commodo nec in nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+                <p>Donec suscipAliquam ac justo ut arcu commodo commodo nec in nisl, per inceptos himenaeos. Donec suscipAliquam ac justo ut arcu commodo commodo nec in nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec suscip commodo nec in nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec suscipit diam nulla, at varius massa.</p>
+                <p>Donec suscipAliquam ac justo ut arcu commodo commodo nec in nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec suscip commodo nec in nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec suscipit diam nulla, at varius massa.</p>
+                <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec suscipit diam nulla, at varius massa. Donec a convallis nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla vestibulum velit cursus nunc adipiscing in tristique nisi feugiat. Maecenas id sem nec lacus placerat porta. Curabitur nec orci ac lorem fermentum adipiscingAliquam ac justo ut arcu commodo commodo nec in nisl. </p>
+                <p>Aliquam ceptos himenaeotent taciti sociosqu ad tora torquent per conubia nostra, per inceptos himenaeos. Donec suscipAliquam ac justo ut arcu commodo commodo nec in nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec suscipAliquam ac justo ut arcu commodo commodo nec in nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+                <p>Donec spAliquam ac justo ut arcu commodo commodonceptos himenaeos. Donec suscip commodo nec in nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec suscipit diam nulla, at varius massa.</p>
+                <p>Donec suscipAliquam ac justo ut arcu commodo commodo nec in nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec suscip commodo nec in nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec suscipit diam nulla, at varius massa.</p>
+                <p>Class apsuscipit diabus orci luctus et ultrices posuere cubilia Curae; Nulla vestibulum velit cursus nunc adipiscing in tristique nisi feugiat. Maecenas id sem nec lacus placerat porta. Curabitur nec orci ac lorem fermentum adipiscingAliquam ac justo ut arcu commodo commodo nec in nisl. </p>
+                <p>Aliquam ceptos himenaeotent taciti sociosqu ad tora torquent per conubia nostra, per inceptos himenaeos. Donec suscipAliquam ac justo ut arcu commodo commodo nec in nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec suscipAliquam ac justo ut arcu commodo commodo nec in nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+                <p>Donec susciAliquam ac justo ut arcu commodo commodo nec in nisl, per inceptos himenaeos. Donec suscipAliquam ac justo ut arcu commodo commodo nec in nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec suscip commodo nec in nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec suscipit diam nulla, at varius massa.</p>
+                <p>Donec susciplitora torquent per conubia nostra, per inceptos himenaeos. Donec suscipit diam nulla, at varius massa.</p>
+                <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec suscipit diam nulla, at varius massa. Donec a convallis nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla vestibulum velit cursus nunc adipiscing in tristique nisi feugiat. Maecenas id sem nec lacus placerat porta. Curabitur nec orci ac lorem fermentum adipiscingAliquam ac justo ut arcu commodo commodo nec in nisl. </p>
+                <p>Aliquam ceptos himenaeotent taciti sociosqu ad tora torquent per conubia nostra, per inceptos himenaeos. Donec suscipAliquam ac justo ut arcu commodo commodo nec in nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec suscipAliquam ac justo ut arcu commodo commodo nec in nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+                <p>Donec suscipAliquam ac justo ut arcu commodo commodo nec in nisl, per inceptos himenaeos. Donec suscipAliquam ac justo ut arcu commodo commodo nec in nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec suscip commodo nec in nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec suscipit diam nulla, at varius massa.</p>
+                <p>Donec suscipAliquam ac justo ut arcu commodo commodo nec in nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec suscip commodo nec in nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec suscipit diam nulla, at varius massa.</p>
+            </section>
+        </div>
+    </main>
+    </body>
+    </html>
+</body>
+</html>
